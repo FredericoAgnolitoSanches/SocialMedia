@@ -1,7 +1,7 @@
-import { urlBase, loginForms, passwordLoginInput, usernameLoginInput } from "../constants";
-import { userLoginAPI } from "../apiFunctions";
-import { setUserToken } from "../authFunctions";
-import { formLogin } from "../../../JSsite-main/js/constants";
+import { urlBase, loginForms, passwordLoginInput, usernameLoginInput } from "../constants.js";
+import { userLoginAPI } from "../apiFunctions.js";
+import { setUserToken } from "../authFunctions.js";
+
 
 async function userLogin(username, password){
     try{
@@ -19,7 +19,7 @@ async function userLogin(username, password){
     }
 }
 
-formLogin.addEventListener("submit", (e) => {
+loginForms.addEventListener("submit", (e) => {
     e.preventDefault();
     userLogin(usernameLoginInput.value, passwordLoginInput.value);
 });

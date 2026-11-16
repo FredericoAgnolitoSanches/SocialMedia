@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="../../Styles/LoginStyles/singup.css">
-    <script src="../../JS/signup-preview.js" defer></script>
+    <script src="../../JS/Login/signup.js" type="module"></script>
 </head>
 <body id="bodySingUp">
     <main class="signup-layout">
-    <form method="post">
+    <form method="post" id="registerForm">
         <fieldset>
             <legend>Create an account</legend>
             <p class="form-intro">A fresh start. A space to connect.</p>
             <p>
                 <label for="user">Username:</label>
-                <input type="text" id="user" name="txtUser" placeholder="Choose a username" autocomplete="username" required>
+                <input type="text" id="userReg" name="txtUserReg" placeholder="Choose a username" autocomplete="username" required>
             </p>
             <p>
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="Create a password" autocomplete="new-password" required>
+                <input type="password" id="passwordReg" name="txtPasswordReg" placeholder="Create a password" autocomplete="new-password" required>
             </p>
             <p>
                 <label for="name">Name:</label>
@@ -43,5 +43,6 @@
         <p>Your profile preview</p>
     </aside>
     </main>
+    
 </body>
 </html>
